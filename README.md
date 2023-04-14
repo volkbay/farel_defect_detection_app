@@ -1,4 +1,6 @@
 # Defect Detection Application
+> The project is assigned by [FAREL Plastic](https://www.farel.com.tr/) that is a joint company partnered by [Farplas](https://www.farplas.com/) and [Wirthwein DE](https://www.wirthwein.de/en/).
+
 This project aims to detect some specific surface defects on plastic surfaces. The final product targets operation on a conveyor belt. This code includes MATLAB modeling (with deep learning), final algorithm (conventional computer vision) and GUI (.NET) in C++ programming language.
 
 The problem is clearly stated below, the defects are hard to be spotted by naked eye. So, it is best practice to adjust photometric settings of the lens & camera to acquire some data containing defect information.
@@ -38,3 +40,8 @@ _Fig. 2: Learning-based experiment (white pixels are candidate features, boundin
 
 ## GUI (filter-based)
 GUI is designed and compiled in .NET Framework. The algorithm leveraged conventional filter-based computer vision techniques, powered by OpenCV. In contrast to automated bounding boxes of learning-based simulation, this implementation needs user input for **fixed** ROIs. It is due to the fact that the system is assumed to stable on a conveyer belt; as a result, location automation is discarded to increase performance.
+
+
+https://user-images.githubusercontent.com/97564250/232170817-78d9422e-edc1-4183-b817-39c488dad4c5.mp4
+
+_Fig. 3: GUI demonstration by adjusting user defined ROI and calibration_
